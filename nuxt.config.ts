@@ -1,23 +1,36 @@
-/**
- * Nuxt configuration object
- * @see {@link https://nuxt.com/docs/api/configuration/nuxt-config}
-
- * Key configurations:
- * - Sets compatibility date to future-proof the application
- * - Enables development tools for better debugging experience
- * - Establishes root directory alias "@" for easier imports
- */
-import { resolve } from "path";
-import tailwindcss from "@tailwindcss/vite";
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2024-11-01",
-  devtools: { enabled: true },
-  alias: {
-    "@": resolve(__dirname, "./"),
+  future: {
+    compatibilityVersion: 4,
   },
-  vite: {
-    plugins: [tailwindcss()],
-  },
-  css: ["~/assets/css/main.css"],
+  // To re-enable _all_ Nuxt v3 behavior, set the following options:
+  // srcDir: '.',
+  // dir: {
+  //   app: 'app'
+  // },
+  // experimental: {
+  //   scanPageMeta: 'after-resolve',
+  //   sharedPrerenderData: false,
+  //   compileTemplate: true,
+  //   resetAsyncDataToUndefined: true,
+  //   templateUtils: true,
+  //   relativeWatchPaths: true,
+  //   normalizeComponentNames: false,
+  //   spaLoadingTemplateLocation: 'within',
+  //   parseErrorData: false,
+  //   pendingWhenIdle: true,
+  //   alwaysRunFetchOnKeyChange: true,
+  //   defaults: {
+  //     useAsyncData: {
+  //       deep: true
+  //     }
+  //   }
+  // },
+  // features: {
+  //   inlineStyles: true
+  // },
+  // unhead: {
+  //   renderSSRHeadOptions: {
+  //     omitLineBreaks: false
+  //   }
+  // }
 });
