@@ -10,6 +10,14 @@
       <li>
         <NuxtLink to="/about" class="p-1 hover:bg-amber-50">About</NuxtLink>
       </li>
+      <li>
+        <NuxtLink to="/about" class="p-1 hover:bg-amber-50">About</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/projects" class="p-1 hover:bg-amber-50"
+          >Projects</NuxtLink
+        >
+      </li>
     </ul>
   </nav>
 </template>
