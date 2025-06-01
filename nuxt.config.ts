@@ -1,7 +1,4 @@
 export default defineNuxtConfig({
-  future: {
-    compatibilityVersion: 4,
-  },
   // To re-enable _all_ Nuxt v3 behavior, set the following options:
   // srcDir: '.',
   // dir: {
@@ -33,4 +30,9 @@ export default defineNuxtConfig({
   //     omitLineBreaks: false
   //   }
   // }
+  future: {
+    compatibilityVersion: 4,
+  },
+
+  modules: ['@nuxtjs/tailwindcss']
 });
