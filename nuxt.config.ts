@@ -1,38 +1,10 @@
 export default defineNuxtConfig({
-  // To re-enable _all_ Nuxt v3 behavior, set the following options:
-  // srcDir: '.',
-  // dir: {
-  //   app: 'app'
-  // },
-  // experimental: {
-  //   scanPageMeta: 'after-resolve',
-  //   sharedPrerenderData: false,
-  //   compileTemplate: true,
-  //   resetAsyncDataToUndefined: true,
-  //   templateUtils: true,
-  //   relativeWatchPaths: true,
-  //   normalizeComponentNames: false,
-  //   spaLoadingTemplateLocation: 'within',
-  //   parseErrorData: false,
-  //   pendingWhenIdle: true,
-  //   alwaysRunFetchOnKeyChange: true,
-  //   defaults: {
-  //     useAsyncData: {
-  //       deep: true
-  //     }
-  //   }
-  // },
-  // features: {
-  //   inlineStyles: true
-  // },
-  // unhead: {
-  //   renderSSRHeadOptions: {
-  //     omitLineBreaks: false
-  //   }
-  // }
   future: {
     compatibilityVersion: 4,
   },
-
-  modules: ['@nuxtjs/tailwindcss']
+  modules: ["@nuxtjs/tailwindcss"],
+  tailwindcss: {
+    exposeConfig: true,
+    viewer: true,
+  },
 });
